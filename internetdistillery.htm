@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway" rel="stylesheet">
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+      }
+      body, a, a:hover {
+        font-family: 'Raleway', Arial, Helvetica, sans-serif;
+        color: rgb(255,255,255);
+      }
+      @keyframes textclip {
+        to {
+          background-position: 200% center;
+        }
+      }
+      .animate-line {
+        letter-spacing: 1.3px;
+        font-weight: 700;
+        padding-top: 19px;
+        padding-bottom: 19px;
+        background-image: linear-gradient(-225deg,rgb(35,21,87) 0%,rgb(68,16,122) 29%,rgb(255,19,97) 67%,rgb(255,248,0) 100%);
+        background-size: auto auto;
+        background-clip: border-box;
+        background-size: 200% auto;
+        color: rgb(255,255,255);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: textclip 3s linear infinite;
+        display: inline-block;
+      }
+      a {
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      hr {
+        margin: auto;
+        width: 40%;
+      }
+      .bgimg {
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        color: rgb(255,255,255);
+        font-size: 25px;
+      }
+      .middle {
+        position: absolute;
+        top: 15%;
+        left: 50%;
+        padding: 19px;
+        transform: translate(-50%, -15%);
+        text-align: center;
+        background-color: rgba(27,27,27,0.65);
+        border-radius: 9px;
+      }
+      .bottommiddle {
+        transform: translate(-50%, 0);
+        left: 50%;
+        position: absolute;
+        bottom: 0;
+        background-color: rgba(27,27,27,0.55);
+        padding: 3px 19px;
+        border-top-left-radius: 9px;
+        border-top-right-radius: 9px;
+        font-size: 19px;
+      }
+      form {
+        text-align: center;
+        position: relative;
+      }
+      form p {
+        font-weight: 500;
+        color: rgb(255,255,255);
+        opacity: 0.7;
+        font-size: 1.4rem;
+        margin-top: 0;
+        margin-bottom: 60px;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+      }
+      form input, form textarea {
+        background: transparent;
+        width: 500px;
+        padding: 1em;
+        margin-bottom: 2em;
+        border: none;
+        border-left: 1px solid rgba(255,255,255,0.3);
+        border-top: 1px solid rgba(255,255,255,0.3);
+        border-radius: 9px;
+        -webkit-backdrop-filter: blur(5px);
+        backdrop-filter: blur(5px);
+        box-shadow: 4px 4px 60px rgba(0,0,0,0.2);
+        color: rgb(255,255,255);
+        font-weight: 500;
+        transition: all 0.2s ease-in-out;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+      }
+      form input:hover, form textarea:hover {
+        background: rgba(255,255,255,0.1);
+        box-shadow: 4px 4px 60px 8px rgba(0,0,0,0.2);
+      }
+      form input[type=email]:focus, form input[type=text]:focus, form textarea:focus {
+        background: rgba(255,255,255,0.1);
+        box-shadow: 4px 4px 60px 8px rgba(0,0,0,0.2);
+      }
+      form input[type=submit] {
+        margin-top: 10px;
+        margin-bottom: 19px;
+        width: 250px;
+        font-size: 1rem;
+        background-color: rgb(68,16,122);
+      }
+      form input[type=submit]:hover {
+        cursor: pointer;
+      }
+      form input[type=submit]:active {
+        background: rgba(25,255,255,0.9);
+      }
+      ::-moz-placeholder {
+        font-weight: 400;
+        color: rgb(255,255,255);
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+      }
+      :-ms-input-placeholder {
+        font-weight: 400;
+        color: rgb(255,255,255);
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+      }
+      ::placeholder {
+        font-weight: 400;
+        color: rgb(255,255,255);
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+      }
+      .checkbox8241 {
+        display: none;
+        visibility: hidden;
+      }
+      @media only screen and (max-width: 765px) {
+        .bottommiddle {
+          display: none;
+          visibility: hidden;
+        }
+      }
+      @media only screen and (max-width: 600px) {
+        .animate-line {
+          letter-spacing: 1.3px;
+          font-weight: 700;
+          padding-top: 19px;
+          padding-bottom: 19px;
+        }
+        h1 {
+          font-size: 29px;
+        }
+        form {
+          text-align: center;
+          position: relative;
+        }
+        form p {
+          font-weight: 500;
+          font-size: 1.1rem;
+          margin-top: 0;
+          margin-bottom: 30px;
+        }
+        form input, form textarea {
+          width: 250px;
+          padding: 0.7em;
+          margin-bottom: 1.5em;
+          font-weight: 500;
+        }
+        form input[type=submit] {
+          margin-top: 7px;
+          margin-bottom: 15px;
+          width: 150px;
+          font-size: 0.7rem;
+        }
+      }
+    </style>
+    <link rel="icon" type="image/x-icon" href="button_id.ico">
+    <title>Internet Distillery</title>      
+  </head>
+<body>
+  <div id="id-bgimg" class="bgimg">
+    <div class="middle">
+      <div class="animate-line">
+        Internet Distillery
+      </div>
+      <h1>
+        We help build your business better,<br>we just happen to be an internet company.
+      </h1>
+      <hr>
+      <br>
+      <form class="" action="https://submit-form.com/9vKNMUop">
+        <input type="text" id="name" name="name" placeholder="Name" minlength="5" required="" />
+        <br>
+        <input type="email" id="email" name="email" placeholder="E-mail" required="" />
+        <br>
+        <input type="hidden" name="_email.subject" value="InternetDistillery: Web Message" />
+        <textarea id="message" name="message" placeholder="Message" required=""></textarea>
+        <br>
+        <input type="checkbox" name="codedas8241" class="checkbox8241" tabindex="-1" autocomplete="off" />
+        <input type="hidden" name="_feedback.dark" value="true" />
+        <input type="submit" value="Send Message" />
+      </form>
+    </div>
+    <div class="bottommiddle">
+      <p>
+        Partnered with great people: <a target="_blank" href="https://www.osritsolutions.com/">OSR IT Solutions</a>, <a target="_blank" href="https://www.superupmarket.com/">Super Upmarket</a>, <a target="_blank" href="https://www.vistaprint.ca/">VistaPrint</a>, <a target="_blank" href="https://www.shopify.com/">Shopify</a>
+      </p>
+    </div>
+  </div>
+  <script>
+    var pictureStorage = ['pexels-eberhard-grossgasteiger-8389098.jpg','pexels-elevate-1267359.jpg','pexels-andre-furtado-3813200.jpg','pexels-harrison-haines-3536510.jpg','pexels-harrison-haines-17398147.jpg','pexels-andrea-piacquadio-842548.jpg','pexels-andrea-piacquadio-840996.jpg','pexels-danny-meneses-943096.jpg','pexels-fauxels-3184657.jpg'];
+    document.querySelector('#id-bgimg').style.backgroundImage = "url('" + pictureStorage[Math.round(Math.random() * (pictureStorage.length - 1))] + "')";
+  </script>
+</body>
+</html>
